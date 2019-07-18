@@ -12,11 +12,12 @@ def readwordlist(wordlist):
 def addExtensions(extensions):
     testextensions = ['php','html','asp']
 
-#def fireaway():
+def fireaway():
+    print("fireaway")
 
 def connect(url):
     client = requests.session()
     response = client.get(url)
-    print(response)
+    print(response.text)
 
 main()
